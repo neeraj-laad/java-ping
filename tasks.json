@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "docker-run",
+            "type": "shell",
+            "command": "docker run -i -p 8080:8080 --name test-ping -v $PWD/src/main:/app/src/main -t java-microprofile",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "docker-stop",
+            "type": "shell",
+            "command": "docker stop test-ping;docker rm test-ping;",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "mvn -B test",
+            "group": "test"
+        }
+    ]
+}

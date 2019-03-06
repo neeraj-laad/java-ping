@@ -1,0 +1,19 @@
+{
+    "files.exclude": {
+        "src/main/liberty/**": true,
+        "Dockerfile": true,
+        ".vscode/**": true,
+        ".theia/**": true,
+	    "pom.xml": true,
+        "Dockerfile-buildimage": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+	"**/target/**": true,
+	"**/libs/**": true,
+    },
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.dependency.packagePresentation": "flat"
+}
